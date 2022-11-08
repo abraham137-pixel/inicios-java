@@ -1,11 +1,11 @@
 public class pedido {
     
     public static void main(String[] args) {
-        
-        if (costo>24);
-        System.out.print("el $es alto");
-        if(alista evoar)
-        {
+        double costo=300.99;
+        boolean listoentregar=false;
+
+        System.out.print(costo>24);
+        System.out.print("precio")
             
         }
     }
