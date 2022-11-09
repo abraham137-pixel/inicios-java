@@ -10,7 +10,7 @@ public class Appp {
        // Condicionales cond = new Condicionales("Abraham");
         //String salida =cond.saludo();
         //System.out.println(salida);
-        Interativas pepito= new Interativas("Abraham");10
+        Interativas pepito= new Interativas("Abraham");
         System.out.println(pepito.e2suma());
         // no se necesita volver a poner el nex int si se ase lo de arriba
     }
