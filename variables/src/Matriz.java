@@ -1,13 +1,18 @@
 public class Matriz {
 
     public static void main(String[] args) {
+        // nose que hay de malo con el int
+        int[] numeros = new int (6);
+// aqui esta la lista  de los numeros
+        numero[0] = 12;
+        numero[1] = 10;
+        numero[2] =  4;
+        numero[3] = 24;
+        numero[4] = 5;
+        numero[5] = 9;
+
+        System.out.println(2);
         
-        char Matriz[] = {'h','o','l','a'};
-    
-        int matriz2[][] = {{1,2,3},{4,5,6}};
-        int[][] matrizClone = matriz2.clone();
-        System.out.println(matriz2 == matrizClone); //falso
-        System.out.println(matriz2[0] == matrizClone[0]); //verdadero
-}
+       }
     }
    
