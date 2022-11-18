@@ -1,19 +1,24 @@
-public class tablero {
-    
-    public static void main(char[] args) {
-       private char p ="|";
-       private char s ="-";
-       char [][] tablero={
-        {s,p,s,p},
-        {s,p,s,p},
-        {s,p,s,p},
-       };
+import java.util.Scanner;
 
-       for ( int flia = o; fila<tablero.length;col++)
+public class Tablero {
+
+public Scanner sc = new Scanner(System.in);
+
+    char[] gato={
+        "g","p"
+    };
+    char p= "|";
+    char g= "-";
+
+    char Gato [][]={
+        {g,p,g,p},
+        {g,p,g,p},
+        {g,p,g,p},
+    };
+    
+    for ( int flia = 0; fila<tablero.length;col++)
         System.out.println(tablero[fila][col]);
 
 
-
-        
-    }
+    
 }
