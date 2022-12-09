@@ -1,29 +1,50 @@
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+import java.awt.*;
 // en la parte de abajo estamos haciendo las me didas para hacer la ventana y la llamamos en el app
 public class Ventanacalculadora extends JFrame {
+    /**
+     * 
+     */
     public Ventanacalculadora() {
         super();
         setSize(300, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        //int filas = 4;
-        //int columnas= 3;
-        //int sepH= 2;
-        //int sepV=2;
-        //setLayout(new GridLayout
-        //(filas,columnas,sepH,sepV));
-        //for(int i=1;i<10;i++){
-        //    add(new JButton(Integer.toString(i)));
-        //    
-        //}
-        //add( new JButton("."));
-        //add( new JButton("0"));
-        //add( new JButton("="));
+        int filas = 5;
+        int columnas= 3;
+        int sepH= 2;
+        int sepV=2;
+        setLayout(new GridLayout(filas,columnas,sepH,sepV));
 
-        
+        for(int i=1;i<10;i++){
+            add(new JButton(Integer.toString(i)));
+
+            JTextField texto = new JTextField("texto");
+            
+            
+
+            
+        }
     }
 
+    public Container teclado(){
+        // TODO: crear arreglo de Strings con los botones 
+        String [] numeros= (
+            "1","2","3","4","5","6","7","8","9","+","-","x","/","%","");
+        /*aqui */
+        //TODO: crear un contenedor
+        teclas = new JButton();
+        Conteiner teclas =
+        //TODO: establecerle el diseño GridLayout
+        /*aqui */ setLayout(new GridLayout(filas,columnas,sepH,sepV));
+        //TODO: llenarlo de botones
+        /*aqui */
+        
+        //TODO: retornalo
+        return null;
+    }
 }
     
 
