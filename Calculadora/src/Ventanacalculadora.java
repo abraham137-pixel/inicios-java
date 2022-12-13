@@ -31,11 +31,11 @@ public class Ventanacalculadora extends JFrame {
 
     public Container teclado(){
         // TODO: crear arreglo de Strings con los botones 
-        String [] numeros= (
-            "1","2","3","4","5","6","7","8","9","+","-","x","/","%","");
+        String [] numeros = (
+            "1","2","3","4","5","6","7","8","9","+","-","x","/","%","0");
         /*aqui */
         //TODO: crear un contenedor
-        teclas = new JButton();
+        teclas = new JButton(16);
         Conteiner teclas =
         //TODO: establecerle el diseño GridLayout
         /*aqui */ setLayout(new GridLayout(filas,columnas,sepH,sepV));
