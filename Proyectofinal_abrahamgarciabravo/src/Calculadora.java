@@ -1,10 +1,6 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.lang.model.element.Element;
-import javax.swing.text.DefaultCaret;
-
-import java.awt.*;
 public class Calculadora{
     private String display;
     private Double resultado;
@@ -37,7 +33,10 @@ public class Calculadora{
             }else{
                 cola.add(aux);
                 cola.add(Character.toString(elemento));
-                aux="";}}
+                aux="";
+            }
+        }
+        cola.add(aux);
             }
 
             
@@ -45,12 +44,21 @@ public class Calculadora{
                 pasarACola(pantalla);
                 suma(Double.parseDouble(cola.poll()));
                 while(!cola.isEmpty())
-                switch (cola.poll()) {
-                    case "+":
+                switch(cola.poll()){
+                    case"+":
                     suma(Double.parseDouble(cola.poll()));
+                    break;
+                    case"-":
+                    resta(Double.parseDouble(cola.poll()));
+                    break;
+                    case"*":
+                    multiplicacion(Double.parseDouble(cola.poll()));
+                    break;
+                    case"/":
+                    division(Double.parseDouble(cola.poll()));
+                    break;
                     default:
                     break;
-                    
                 }
                 return resultado;
 
@@ -60,5 +68,4 @@ public class Calculadora{
                 this.cola.clear();
         }
         }
-    //}
-//}
+    

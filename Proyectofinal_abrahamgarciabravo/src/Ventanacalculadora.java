@@ -56,7 +56,6 @@ public class Ventanacalculadora extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         if (e.getSource() == resultado) {
-            System.out.println("teclado");
             display.setText(pantalla);
 
         }
